@@ -21,3 +21,6 @@ body {
 .country-list {
   list-style: none;
 }
+.card-name {
+  font-size: 26px;
+}

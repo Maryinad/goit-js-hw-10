@@ -12,6 +12,7 @@ const BASE_URL = 'https://restcountries.com';
 
 export const fetchCountries = query => {
   return fetch(`${BASE_URL}/v3.1/name/${query}`).then(res => {
+    console.log(res);
     if (!res.ok) {
       throw res.status;
     }
@@ -19,4 +20,7 @@ export const fetchCountries = query => {
   });
 };
 
-// fetchCountries('Ukraine').then(data => console.log(data));
+fetchCountries('Ukraine').then(data => console.log(data));
+
+// ${BASE_URL}/v3.1/name/${query}
+// fetch(`${BASE_URL}/v2/all?fields=${query},capital,population`);
