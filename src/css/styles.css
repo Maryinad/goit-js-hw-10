@@ -18,9 +18,15 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
-.country-list {
+ul {
   list-style: none;
 }
 .card-name {
   font-size: 26px;
+}
+.country-img {
+  margin-right: 12px;
+}
+.country-item {
+  margin-top: 8px;
 }
